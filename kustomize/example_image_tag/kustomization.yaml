@@ -1,8 +1,9 @@
 resources:
-- pod.yaml
+#- pod.yaml
+- deployment.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: busybox
+- name: nginx
   newName: alpine
   newTag: "3.6"
